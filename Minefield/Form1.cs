@@ -74,12 +74,35 @@ namespace Minefield
 
             //Update the label
             clearedText.Text = percentInt.ToString() + "% Cleared";
+
+            //Check to see if all non-mine locations have been checked
+            if( (400 - ((locationsCleared + 1) + mineCount) ) == 0) //plus 1 because the number of locations visited id counted after they've been visited
+            {
+                //if so show the you win message box
+                YouWin();
+            }
+        }
+
+        void YouWin()
+        {
+            //Show a congratulations messagebox            
+            DialogResult result = MessageBox.Show("Congratulations, you have successfully traversed the minefield.", "You Win!", MessageBoxButtons.OK);
+
+            //If the button is clicked start a new game
+            //http://stackoverflow.com/questions/16334323/event-handlers-on-message-box-buttons
+            if (result == DialogResult.OK)
+            {
+                StartNewGame();
+            }
         }
 
         void RandomlyPlaceBombs()
         {
+            //set the mine location array to be the number of mines
             mineLocations = new int[mineCount];
 
+            //Create a new randomiser
+            //https://www.dotnetperls.com/random
             Random rand = new Random();
 
             for (int i = 0; i < mineCount; i++)
@@ -88,9 +111,10 @@ namespace Minefield
                 int location;
                 do
                 {
+                    //get a random location
                     location = GetRandomLocation(rand);
                 }
-                while (CheckLocation(location) == true);
+                while (CheckLocation(location) == true); //Check it's a valid location
 
                 //Add the location to the mine location array
                 mineLocations[i] = location;                
@@ -98,10 +122,10 @@ namespace Minefield
         }
 
         bool CheckLocation(int location)
-        {
-            //Is this location already in the location array?
+        {            
             for(int i = 0; i < mineLocations.Length; i++)
             {
+                //Is this location already in the location array?
                 if (mineLocations[i] == location)
                 {
                     //If so get a different location
@@ -128,7 +152,7 @@ namespace Minefield
         }
 
         string GetLabelFromLocation()
-        {
+        {            
             return "label" + (((atY-1) * 20) + atX).ToString();
         }
 
@@ -159,7 +183,7 @@ namespace Minefield
             if (beenHere == false)
             {
                 //Mark the player as having visited this location
-                visitedLocations[location] = true;
+                visitedLocations[location - 1] = true;
                 //increase the cleared locations counter
                 locationsCleared++;
             }
@@ -359,7 +383,17 @@ namespace Minefield
 
             //Explode the mine that the player set off
             Label label = this.Controls.Find(GetLabelFromLocation(), true).FirstOrDefault() as Label;
-            label.Image = Properties.Resources.boom;            
+            label.Image = Properties.Resources.boom;
+
+            //Show a congratulations messagebox            
+            DialogResult result = MessageBox.Show("Unfortunately you triggered a mine.", "You Lose :(", MessageBoxButtons.OK);
+
+            //If the button is clicked start a new game
+            //http://stackoverflow.com/questions/16334323/event-handlers-on-message-box-buttons
+            if (result == DialogResult.OK)
+            {
+                StartNewGame();
+            }
         }
 
         void ShowAllMines()
@@ -498,11 +532,13 @@ namespace Minefield
 
         private void startNewGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Start a new game
             StartNewGame();
         }    
 
         private void Difficulty_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //Check which difficulty was selected, set the mine count to the correct number for the difficulty and then start a new game
             if(Difficulty.SelectedIndex == 0)
             {
                 mineCount = 10;
@@ -519,11 +555,18 @@ namespace Minefield
             {
                 mineCount = 30;
                 StartNewGame();
-            }
+            }            
+        }        
+
+        private void cheatModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Show the mines
+            ShowAllMines();            
         }
 
-        private void settingsToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Set the difficulty based on how many mines there are
             if (mineCount == 10)
             {
                 Difficulty.SelectedIndex = 0;

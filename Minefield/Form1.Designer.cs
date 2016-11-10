@@ -436,13 +436,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.clearedText = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menu = new System.Windows.Forms.MenuStrip();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.startNewGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.Difficulty = new System.Windows.Forms.ToolStripComboBox();
+            this.cheatModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -4523,24 +4524,26 @@
             this.clearedText.TabIndex = 6;
             this.clearedText.Text = "0% Cleared";
             // 
-            // menuStrip1
+            // menu
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.settingsToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(464, 24);
-            this.menuStrip1.TabIndex = 7;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menu.Location = new System.Drawing.Point(0, 0);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(464, 24);
+            this.menu.TabIndex = 7;
+            this.menu.Text = "menuStrip1";
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.startNewGameToolStripMenuItem,
-            this.settingsToolStripMenuItem1});
+            this.settingsToolStripMenuItem1,
+            this.cheatModeToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.settingsToolStripMenuItem.Text = "Options";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // startNewGameToolStripMenuItem
             // 
@@ -4554,9 +4557,8 @@
             this.settingsToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Difficulty});
             this.settingsToolStripMenuItem1.Name = "settingsToolStripMenuItem1";
-            this.settingsToolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
+            this.settingsToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.settingsToolStripMenuItem1.Text = "Difficulty";
-            this.settingsToolStripMenuItem1.Click += new System.EventHandler(this.settingsToolStripMenuItem1_Click);
             // 
             // Difficulty
             // 
@@ -4569,6 +4571,13 @@
             this.Difficulty.Name = "Difficulty";
             this.Difficulty.Size = new System.Drawing.Size(121, 23);
             this.Difficulty.SelectedIndexChanged += new System.EventHandler(this.Difficulty_SelectedIndexChanged);
+            // 
+            // cheatModeToolStripMenuItem
+            // 
+            this.cheatModeToolStripMenuItem.Name = "cheatModeToolStripMenuItem";
+            this.cheatModeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cheatModeToolStripMenuItem.Text = "Cheat Mode";
+            this.cheatModeToolStripMenuItem.Click += new System.EventHandler(this.cheatModeToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -4583,16 +4592,16 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menu;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menu.ResumeLayout(false);
+            this.menu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5008,11 +5017,12 @@
         private System.Windows.Forms.Label radarLabel;
         private System.Windows.Forms.Label radarText;
         private System.Windows.Forms.Label clearedText;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem startNewGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem1;
         private System.Windows.Forms.ToolStripComboBox Difficulty;
+        private System.Windows.Forms.ToolStripMenuItem cheatModeToolStripMenuItem;
     }
 }
 
