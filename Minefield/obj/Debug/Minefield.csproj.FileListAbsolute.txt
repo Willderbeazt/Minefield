@@ -1,0 +1,18 @@
+W:\VisualStudioProjects\Minefield\Minefield\bin\Debug\Minefield.exe.config
+D:\Computer Programming\Minefield\Minefield\bin\Debug\Minefield.exe.config
+D:\Computer Programming\Minefield\Minefield\obj\Debug\Minefield.csprojResolveAssemblyReference.cache
+D:\Computer Programming\Minefield\Minefield\obj\Debug\Minefield.Form1.resources
+D:\Computer Programming\Minefield\Minefield\obj\Debug\Minefield.Properties.Resources.resources
+D:\Computer Programming\Minefield\Minefield\obj\Debug\Minefield.csproj.GenerateResource.Cache
+D:\Computer Programming\Minefield\Minefield\bin\Debug\Minefield.exe
+D:\Computer Programming\Minefield\Minefield\bin\Debug\Minefield.pdb
+D:\Computer Programming\Minefield\Minefield\obj\Debug\Minefield.exe
+D:\Computer Programming\Minefield\Minefield\obj\Debug\Minefield.pdb
+W:\VisualStudioProjects\Minefield\Minefield\obj\Debug\Minefield.exe
+W:\VisualStudioProjects\Minefield\Minefield\obj\Debug\Minefield.pdb
+W:\VisualStudioProjects\Minefield\Minefield\bin\Debug\Minefield.exe
+W:\VisualStudioProjects\Minefield\Minefield\bin\Debug\Minefield.pdb
+W:\VisualStudioProjects\Minefield\Minefield\obj\Debug\Minefield.csprojResolveAssemblyReference.cache
+W:\VisualStudioProjects\Minefield\Minefield\obj\Debug\Minefield.Form1.resources
+W:\VisualStudioProjects\Minefield\Minefield\obj\Debug\Minefield.Properties.Resources.resources
+W:\VisualStudioProjects\Minefield\Minefield\obj\Debug\Minefield.csproj.GenerateResource.Cache

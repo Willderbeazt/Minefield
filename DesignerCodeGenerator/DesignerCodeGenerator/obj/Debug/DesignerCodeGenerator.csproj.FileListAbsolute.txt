@@ -1,0 +1,12 @@
+D:\Computer Programming\Minefield\DesignerCodeGenerator\DesignerCodeGenerator\bin\Debug\DesignerCodeGenerator.exe.config
+D:\Computer Programming\Minefield\DesignerCodeGenerator\DesignerCodeGenerator\bin\Debug\DesignerCodeGenerator.exe
+D:\Computer Programming\Minefield\DesignerCodeGenerator\DesignerCodeGenerator\bin\Debug\DesignerCodeGenerator.pdb
+D:\Computer Programming\Minefield\DesignerCodeGenerator\DesignerCodeGenerator\obj\Debug\DesignerCodeGenerator.csprojResolveAssemblyReference.cache
+D:\Computer Programming\Minefield\DesignerCodeGenerator\DesignerCodeGenerator\obj\Debug\DesignerCodeGenerator.exe
+D:\Computer Programming\Minefield\DesignerCodeGenerator\DesignerCodeGenerator\obj\Debug\DesignerCodeGenerator.pdb
+W:\VisualStudioProjects\Minefield\DesignerCodeGenerator\DesignerCodeGenerator\bin\Debug\DesignerCodeGenerator.exe.config
+W:\VisualStudioProjects\Minefield\DesignerCodeGenerator\DesignerCodeGenerator\obj\Debug\DesignerCodeGenerator.exe
+W:\VisualStudioProjects\Minefield\DesignerCodeGenerator\DesignerCodeGenerator\obj\Debug\DesignerCodeGenerator.pdb
+W:\VisualStudioProjects\Minefield\DesignerCodeGenerator\DesignerCodeGenerator\bin\Debug\DesignerCodeGenerator.exe
+W:\VisualStudioProjects\Minefield\DesignerCodeGenerator\DesignerCodeGenerator\bin\Debug\DesignerCodeGenerator.pdb
+W:\VisualStudioProjects\Minefield\DesignerCodeGenerator\DesignerCodeGenerator\obj\Debug\DesignerCodeGenerator.csprojResolveAssemblyReference.cache
