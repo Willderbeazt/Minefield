@@ -89,7 +89,7 @@ namespace Minefield
             DialogResult result = MessageBox.Show("Congratulations, you have successfully traversed the minefield.", "You Win!", MessageBoxButtons.OK);
 
             //If the button is clicked start a new game
-            //http://stackoverflow.com/questions/16334323/event-handlers-on-message-box-buttons
+            https://www.dotnetperls.com/messagebox-show
             if (result == DialogResult.OK)
             {
                 StartNewGame();
@@ -389,7 +389,7 @@ namespace Minefield
             DialogResult result = MessageBox.Show("Unfortunately you triggered a mine.", "You Lose :(", MessageBoxButtons.OK);
 
             //If the button is clicked start a new game
-            //http://stackoverflow.com/questions/16334323/event-handlers-on-message-box-buttons
+            https://www.dotnetperls.com/messagebox-show
             if (result == DialogResult.OK)
             {
                 StartNewGame();
